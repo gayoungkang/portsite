@@ -1,14 +1,15 @@
 /* common */
 section {
     width: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 10%;
 }
-section > .contents, footer > .contents {
+section > .contents, footer > .contents, header > .contents {
     width: 80%;
     margin: 0 auto;
 }
 .more-btn {
     display: block;
+    margin: 0 auto;
     width: 130px;
     height: 40px;
     font-size: 0.9rem;
@@ -24,8 +25,8 @@ section > .contents, footer > .contents {
     background-color: transparent;
 }
 .top {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 .top h2 {
     font-size: 1.6rem;
@@ -33,6 +34,7 @@ section > .contents, footer > .contents {
     font-family: 'NotoSansCJKkr-Bold';
 }
 .top p {
+    line-height: 1.9;
     color: #909090;
     margin-top: 20px;
     text-align: center;
@@ -42,8 +44,8 @@ section > .contents, footer > .contents {
 /* header start */
 header {
     width: 100%;
-    padding-top: 100px;
-    height: 50vh;
+    padding-top: 7%;
+    padding-bottom: 7%;
     background-color: #222223;
 }
 header .text-ani {
@@ -385,13 +387,10 @@ header > .more-btn {
     background-color: #00000061;
 }
 .section4 .text-wrap {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    padding-top: 7%;
 }
 .section4 .text-wrap h2 {
-    margin-bottom: 30px;
+    margin-bottom: 2%;
     color: #fff;
     line-height: 1.4;
     font-size: 1.6rem;
@@ -421,10 +420,9 @@ header > .more-btn {
     background-color: #fff;
 }
 .section5 .contents .text-box {
-    width: 38%;
+    width: 29%;
     float: left;
-    margin-right: 150px;
-    margin-right: 67px;
+    margin-right: 14%;
 }
 .section5 .contents .text-box h2 {
     margin-bottom: 30px;
@@ -438,18 +436,18 @@ header > .more-btn {
     font-family: 'NotoSansCJKkr-Regular';
 }
 .section5 .contents ul {
-    float: right;
+    float: left;
     width: 57%;
 }
 .section5 .contents ul li {
-    width: 355px;
-    padding: 50px 30px;
+    width: 46%;
+    padding: 10% 5%;
     float: left;
     border-radius: 5px;
     background-color: #bdbdbd36;
 }
 .section5 .contents ul li:first-child {
-    margin-right: 50px;
+    margin-right: 8%;
 }
 .section5 .contents ul li img {
     display: block;
@@ -477,10 +475,10 @@ header > .more-btn {
 }
 .section6 .contents ul li {
     width: 32%;
-    height: 167px;
+    height: 210px;
     float: left;
     padding: 40px;
-    margin-right: 26px;
+    margin-right: 2%;
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 1px 0 13px rgba(0,1,1,0.1);
@@ -489,12 +487,13 @@ header > .more-btn {
     margin-right: 0;
 }
 .section6 .contents ul li img {
-    width: 40px;
+    width: 10%;
     float: left;
 }
 .section6 .contents ul li .text-wrap {
+    width: 50%;
     float: left;
-    margin-left: 20px;
+    margin-left: 5%;
 }
 .section6 .contents ul li .text-wrap span {
     display: inherit;
@@ -504,7 +503,7 @@ header > .more-btn {
     font-family: 'NotoSansCJKkr-Medium';
 }
 .section6 .contents ul li .text-wrap p {
-    width: 288px;
+    /* min-width: 288px; */
     margin-top: 10px;
     font-family: 'NotoSansCJKkr-Regular';
     font-size: 0.9rem;
@@ -522,25 +521,23 @@ header > .more-btn {
 /* footer start */
 footer {
     width: 100%;
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 5%;
+    padding-bottom: 5%;
     background-color: #292929;
 }
-footer .contents {
-    position: relative;
-}
 footer .contents .sns-link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    width: 12%;
+    margin: 0 auto;
 }
 footer .contents .sns-link li {
     float: left;
-    margin-right: 20px;
+    margin-right: 12%;
 }
 footer .contents .sns-link li:last-child {
     margin-right: 0;
+}
+footer .contents a {
+    display: block;
 }
 footer .contents img {
     width: 25px;
@@ -551,5 +548,187 @@ footer  p {
     font-family: 'NotoSansCJKkr-Regular';
     font-size: 0.9rem;
     color: #9c9c9c;
-    margin-top: 34px;
+    margin-top: 2%;
+}
+/* media */
+@media only screen and (max-width:1632px) {
+    footer .contents .sns-link {
+        width: 13%;
+    }
+}
+@media only screen and (max-width:1506px) {
+    footer .contents .sns-link {
+        width: 16%;
+    }
+}
+@media only screen and (max-width:1200px) {
+    .section6 .contents ul li .text-wrap {
+        width: 66%;
+    }
+    footer .contents .sns-link {
+        width: 21%;
+    }
+}
+@media only screen and (max-width:1024px) {
+    html {
+        font-size: 90% !important;
+    }
+    header p {
+        width: 100%;
+    }
+    .section2 .contents .wrap .col-1 {
+        margin-right: 10%;
+    }
+    .section4 {
+        padding-top: 18%;
+    }
+    .section5 .contents ul li:first-child {
+        margin-right: 8%;
+    }
+    footer .contents .sns-link {
+        width: 24%;
+    }
+}
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 80% !important;
+    }
+    header p {
+        width: 100%;
+    }
+    .section2 .contents .wrap .col-1 {
+        width: 100%;
+        text-align: left;
+        margin-right: 0;
+        margin-bottom: 80px;
+    }
+    .section2 .contents .wrap .col-2 {
+        width: 100%;   
+    }
+    .section4 {
+        padding-top: 22%;
+    }
+    .section5 .contents .text-box {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    .section5 .contents ul {
+        width: 100%;
+    }
+    .section6 .contents ul li {
+        width: 31%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .section6 .contents ul li .text-wrap {
+        margin-left: 0;
+    }
+    .section6 .contents ul li .text-wrap p {
+        width: 100%;
+    }
+    .section5 .contents ul li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 80px;
+    }
+    .section6 .contents ul li img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .section6 .contents ul li {
+        width: 100%;
+        height: auto;
+    }
+    .section6 .contents ul li .text-wrap {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .section6 .contents ul li .text-wrap {
+        margin-left: 0;
+    }
+    .section6 .contents ul li .text-wrap span {
+        text-align: center;
+    }
+    footer .contents .sns-link {
+        width: 26%;
+    }
+}
+@media only screen and (max-width:480px) {
+    html {
+        font-size: 70% !important;
+    }
+    header .text-ani {
+        min-width: 318px;
+    }
+    header p {
+        width: 100%;
+    }
+    .section1 .contents ul li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding-top: 42%;
+    }
+    .section4 {
+        padding-top: 31%;
+    }
+    .section6 .contents ul li img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .section6 .contents ul li {
+        width: 100%;
+        height: auto;
+    }
+    .section6 .contents ul li .text-wrap {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .section6 .contents ul li .text-wrap {
+        margin-left: 0;
+    }
+    .section6 .contents ul li .text-wrap span {
+        text-align: center;
+    }
+    footer .contents img {
+        width: 24px;
+    }
+    footer .contents .sns-link {
+        width: 48%;
+    }
+}
+@media only screen and (max-width:378px) {
+    footer .contents .sns-link {
+        width: 50%;
+    }
+    .section4 {
+        padding-top: 38%;
+    }
+}
+@media only screen and (max-width:360px) {
+    footer .contents .sns-link {
+        width: 53%;
+    }
+}
+@media only screen and (max-width:320px) {
+    html {
+        font-size: 66.6% !important;
+    }
+    header .text-ani {
+        min-width: 257px;
+    }
+    .section4 {
+        padding-top: 40%;
+    }
+    footer .contents .sns-link {
+        width: 59%;
+    }
 }
