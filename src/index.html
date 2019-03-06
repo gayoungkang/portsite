@@ -9,23 +9,56 @@
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/swiper.min.css">
     <script src="../js/swiper.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 </head>
 <body>
+    <button class="scroll-top">scrolltop</button>
+
     <header>
+        <div class="contents">
+            <h1>gysite</h1>
+            <nav class="web-nav clearfix">
+                <ul class="clearfix">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Service</a>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="m-wrap">
+                <img class="menu" src="../img/menu.png" alt="menu">
+                <div class="m-back">
+                    <nav class="m-nav">
+                        <img class="close" src="../img/close.png" alt="close">
+                        <ul class="clearfix">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Service</a>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
         <div class="contents">
             <div class="text-ani">
                 <h1>Hello!</h1>
-                <ul class="clearfix">
-                    <li>gayoung</li>
-                    <li>portfolio</li>
-                    <li>welcome!</li>
-                </ul>
-            </div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quidem est eum impedit sed inventore rerum nulla, debitis itaque! Nisi nobis tempora odio temporibus saepe ut rerum delectus! Consequuntur, autem.</p>
+                    <ul class="clearfix">
+                        <li>gayoung</li>
+                        <li>portfolio</li>
+                        <li>welcome!</li>
+                    </ul>
+             </div>
+            <p>안녕하세요. 제 포트폴리오 웹 사이트에 오신것을 환영합니다. 아직 부족한 웹 사이트이지만, 열심히 작업해서 새로운 프로젝트를 업데이트 할 예정입니다.  </p>
             <a class="more-btn" href="#">READ MORE</a>
         </div>
-    </header>
+    </section>
 
     <section class="section1">
         <div class="contents">
@@ -33,7 +66,7 @@
                 <li>
                     <a href="#">
                         <div class="text">
-                            <p>profile</p>
+                            <p>Profile</p>
                         </div>
                         <div class="back"></div>
                         <div class="plus-line">
@@ -44,7 +77,7 @@
                 <li>
                     <a href="#">
                         <div class="text">
-                            <p>profile</p>
+                            <p>Blog</p>
                         </div>
                         <div class="back"></div>
                         <div class="plus-line">
@@ -53,9 +86,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://github.com/gayoungkang">
                         <div class="text">
-                            <p>profile</p>
+                            <p>Git</p>
                         </div>
                         <div class="back"></div>
                         <div class="plus-line">
@@ -64,9 +97,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.behance.net/kathy5742fe59">
                         <div class="text">
-                            <p>profile</p>
+                            <p>Behance</p>
                         </div>
                         <div class="back"></div>
                         <div class="plus-line">
@@ -82,18 +115,13 @@
         <div class="contents">
             <div class="top">
                 <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quia, iste tempora optio iure dolores commodi fugit?</p>
+                <p>제 자신을 간략하게 소개합니다. 하단에 있는 스킬들은 제가 사용 가능한 툴이며, 아직 부족한 부분들은 더욱 향상시킬 예정입니다.</p>
             </div>
             <div class="wrap clearfix">
                 <div class="col-1">
                     <p>안녕하세요? 제 이름은 강가영입니다. <br>
                     디자인으로 일하던 중 프로그래밍에 관심이 있어서 커리어 전환을 하게 되었습니다.<br>
                     프로그래밍에 대해 아직 부족한 점이 많지만, 노력하고 열심히 하는 개발자가 되겠습니다.                   
-                    </p>
-                    <p>
-                        Hi? My name is gayoung kang.<br>
-                        While working on design, I was interested in programming, so I switched to a career.
-                        There is still a lot of lack of programming, but I will be a hard working developer.
                     </p>
                 </div>
                 <div class="col-2">
@@ -159,17 +187,46 @@
         <div class="contents">
            <div class="top">
                <h2>Latest Works</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quia, iste tempora optio iure dolores commodi fugit?</p>
+               <p>제가 참여 및 작업한 웹사이트 입니다. 아래에 이미지를 누르시면 작업했던 사이트를 직접 보실 수 있습니다.</p>
            </div>
         </div>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                      <a href="#" class="img"></a>
+                      <a href="http://www.atarad.io/mbs/main.mbs?menu=main" class="img"></a>
+                      <a href="http://www.atarad.io/mbs/main.mbs?menu=main" class="slide-back"></a>
+                         <div class="plus-line">
+                            <span></span><span></span>
+                        </div> 
                   </div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">
+                        <a href="http://www.rootedpartners.com/" class="img"></a>
+                        <a href="http://www.rootedpartners.com/" class="slide-back"></a>
+                        <div class="plus-line">
+                           <span></span><span></span>
+                       </div> 
+                  </div>
+                  <div class="swiper-slide">
+                        <a href="http://www.blockcast.io/" class="img"></a>
+                        <a href="http://www.blockcast.io/" class="slide-back"></a>
+                        <div class="plus-line">
+                           <span></span><span></span>
+                       </div> 
+                  </div>
+                  <div class="swiper-slide">
+                        <a href="http://www.airdropost.com/main.ai?filter=closed" class="img"></a>
+                        <a href="http://www.airdropost.com/main.ai?filter=closed" class="slide-back"></a>
+                        <div class="plus-line">
+                           <span></span><span></span>
+                       </div> 
+                  </div>
+                  <div class="swiper-slide">
+                        <a href="http://www.atarad.io/orbs/main.orbs" class="img"></a>
+                        <a href="http://www.atarad.io/orbs/main.orbs" class="slide-back"></a>
+                        <div class="plus-line">
+                           <span></span><span></span>
+                       </div> 
+                  </div>
             </div>
             <!-- Add Arrows -->
             <div class="swiper-button-next"></div>
@@ -217,7 +274,7 @@
         <div class="contents">
             <div class="top">
                 <h2>Get in touch</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quia, iste tempora optio iure dolores commodi fugit?</p>
+                <p>제가 작업했던 작업물들이 마음에 드셨다면 하단에 있는 메일 혹은 문자로 연락주시길 바랍니다.</p>
             </div>
             <ul class="clearfix">
                 <li class="clearfix">
@@ -262,7 +319,57 @@
     </footer>
 
    <script>
-        var swiper = new Swiper('.swiper-container', {
+    //    $(window).scroll(function () { var scrollValue = $(document).scrollTop(); console.log(scrollValue); });
+    
+    // header scroll event
+    let header = document.querySelector('header');
+
+     window.addEventListener('scroll', function() {
+        if(window.scrollY >= 381){
+            header.classList.add('active'); 
+        } 
+        else header.classList.remove('active');
+    });
+    
+    // scrolltop event
+    $(document).ready(function() {
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 200) {
+				$('.scroll-top').fadeIn();
+			} else {
+				$('.scroll-top').fadeOut();
+			}
+		});
+		$('.scroll-top').click(function() {
+			$('html, body').animate({
+				scrollTop : 0
+			}, 400);
+			return false;
+		});
+	});
+    // menu event
+    let menu = document.querySelector('.menu');
+    let mNav = document.querySelector('.m-nav');
+    let close = document.querySelector('.close');
+    let back = document.querySelector('.m-back');
+
+    menu.addEventListener("click", function() {
+        menu.classList.add("active");
+        mNav.classList.add("active");
+        back.classList.add("active");
+    });
+    close.addEventListener("click", function() {
+        mNav.classList.remove("active");
+        menu.classList.remove("active");
+        back.classList.remove("active");
+    });
+    back.addEventListener("click", function () {
+        mNav.classList.remove("active");
+        menu.classList.remove("active");
+        close.classList.remove("active");
+    })
+    // swiper 
+     var swiper = new Swiper('.swiper-container', {
             slidesPerView: 2,
             spaceBetween: 30,
             centeredSlides: true,
@@ -276,6 +383,7 @@
       },
     });
 
+    // map api
     let Maplocation = new google.maps.LatLng(37.358019, 126.932969);
         var mapProp = {
             center: Maplocation,
