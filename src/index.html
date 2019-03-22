@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 </head>
+
 <body>
     <button class="scroll-top">scrolltop</button>
 
@@ -20,11 +22,11 @@
             <h1>gysite</h1>
             <nav class="web-nav clearfix">
                 <ul class="clearfix">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Service</a>
-                    <li><a href="#">Contact</a></li>
+                    <li><button type="button" class="on-click" data-target=".sec1">Home</button></li>
+                    <li><button type="button" class="on-click" data-target=".sec2">About Me</button></li>
+                    <li><button type="button" class="on-click" data-target=".sec3">Portfolio</button></li>
+                    <li><button type="button" class="on-click" data-target=".sec4">Service</button></li>
+                    <li><button type="button" class="on-click" data-target=".sec5">Contact</button></li>
                 </ul>
             </nav>
             <div class="m-wrap">
@@ -33,29 +35,29 @@
                     <nav class="m-nav">
                         <img class="close" src="../img/close.png" alt="close">
                         <ul class="clearfix">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Service</a>
-                            <li><a href="#">Contact</a></li>
+                            <li><button type="button">Home</button></li>
+                            <li><button type="button">About Me</button></li>
+                            <li><button type="button">Portfolio</button></li>
+                            <li><button type="button">Service</button></li>
+                            <li><button type="button">Contact</button></li>
                         </ul>
-                    </div>
+                </div>
                 </nav>
             </div>
         </div>
     </header>
 
-    <section class="section">
+    <section class="section sec sec1">
         <div class="contents">
             <div class="text-ani">
                 <h1>Hello!</h1>
-                    <ul class="clearfix">
-                        <li>gayoung</li>
-                        <li>portfolio</li>
-                        <li>welcome!</li>
-                    </ul>
-             </div>
-            <p>안녕하세요. 제 포트폴리오 웹 사이트에 오신것을 환영합니다. 아직 부족한 웹 사이트이지만, 열심히 작업해서 새로운 프로젝트를 업데이트 할 예정입니다.  </p>
+                <ul class="clearfix">
+                    <li>gayoung</li>
+                    <li>portfolio</li>
+                    <li>welcome!</li>
+                </ul>
+            </div>
+            <p>안녕하세요. 제 포트폴리오 웹 사이트에 오신것을 환영합니다. 아직 부족한 웹 사이트이지만, 열심히 작업해서 새로운 프로젝트를 업데이트 할 예정입니다. </p>
             <a class="more-btn" href="#">READ MORE</a>
         </div>
     </section>
@@ -64,7 +66,7 @@
         <div class="contents">
             <ul class="clearfix">
                 <li>
-                    <a href="#">
+                    <a href="#" class="pro-modal">
                         <div class="text">
                             <p>Profile</p>
                         </div>
@@ -75,7 +77,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://justgy.tistory.com/">
                         <div class="text">
                             <p>Blog</p>
                         </div>
@@ -111,7 +113,141 @@
         </div>
     </section>
 
-    <section class="section2">
+    <div class="modal">
+        <div class="modal-wrap">
+            <button class="clos-btn" type="button"><img src="../img/close_1.png" alt="닫기"></button>
+            <div class="swiper-container swiper-container1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide no-wrap">
+                        <div class="text-box">
+                            <span>D E V E L O P E R</span>
+                            <h1>G A Y O U N G K A N G</h1>
+                            <p>CURRICULUM VITAE</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide profile-pg">
+                        <h2 class="modal-title">P R O F I L E</h2>
+                        <div class="wrap">
+                            <ul class="clearfix">
+                                <li><img src="../img/pr-1.png" alt="이미지1"></li>
+                                <li><img src="../img/pr-2.png" alt="이미지2"></li>
+                                <li><img src="../img/pr-3.png" alt="이미지3"></li>
+                                <li><img src="../img/pr-4.png" alt="이미지4"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wrap-common">
+                        <h2 class="modal-title">W O R K</h2>
+                        <div class="wrap">
+                            <div class="col clearfix">
+                                <span class="date">2015</span>
+                                <div class="text">
+                                    <span class="sub-title">(주) 왓이짓 입사</span>
+                                    <p>블록체인 사업 | 에이전시 및 무역.제조 사업<br>
+                                        주요 업무 작업 : CSS3, HTML5, 자바스크립트</p>
+                                </div>
+                            </div>
+                            <div class="col clearfix">
+                                <span class="date">2017</span>
+                                <div class="text">
+                                    <span class="sub-title">(주) 아티스트메이드</span>
+                                    <p>패션 사업 | 유통.무역.제조 사업<br>
+                                        주요 업무 작업 : 웹 디자인 / MD / 그래픽 디자인</p>
+                                </div>
+                            </div>
+                            <div class="col clearfix">
+                                <span class="date">2018</span>
+                                <div class="text">
+                                    <span class="sub-title">(주) 루티드파트너스</span>
+                                    <p>패션 사업 | 유통.무역.제조 사업<br>
+                                        주요 업무 작업 : 웹 디자인 / MD / 상품 및 편집 디자인</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide wrap-common edcation-pg">
+                        <h2 class="modal-title">E D U C A T I O N</h2>
+                        <div class="wrap">
+                            <div class="col clearfix">
+                                <span class="date">2013</span>
+                                <div class="text">
+                                    <span class="sub-title">백석예술대학교 입학</span>
+                                    <p>면접, 실기, 수능 합산하여 정시로 입학</p>
+                                </div>
+                            </div>
+                            <div class="col clearfix">
+                                <span class="date">2014</span>
+                                <div class="text">
+                                    <span class="sub-title">백석예술대학교 재학</span>
+                                    <p>시각 디자인 부과대 - 시각 디자인 전체 부과대 활동
+                                        <br>멘토 및 봉사활동
+                                </div>
+                            </div>
+                            <div class="col clearfix">
+                                <span class="date">2015</span>
+                                <div class="text">
+                                    <span class="sub-title">백석예술대학교 졸업</span>
+                                    <p>학점 4.0 / 총점 4.5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide intro-pg">
+                        <h2 class="modal-title">I N T R O D U C T I O N</h2>
+                        <div class="wrap">
+                            <h3>벽돌이 되고픈 돌멩이</h3>
+                            <span>구르기 바빴던 작은 돌멩이</span>
+                            <p>대학교 졸업 후 저는 동기들보다 취업이 빠른 편이었습니다.졸업과 동시에 사회생활을 시작하게 된 터라,
+                                기쁨 못지않게 부담감도 컸습니다. 남들보다 시작이 빨랐던 만큼, 경험과 지식이 풍부한 사회인으로 성장해가야 한다는 생각으로 회사 일에 매달렸던
+                                2년이었습니다.
+                                돌멩이처럼 구르기 바빴던 시간이었던 것 같습니다. 아시다시피 작은 회사에서는 진급이 빠릅니다. 2년 차에 불과한 저 역시 ‘대리’라는 직급을 달게
+                                되었는데요.
+                                신입사원을 거쳐 대리로 불리기까지 많은 일과 배움이 있었습니다. 가장 먼저 저는 제 업무 능력을 어떻게 효율적으로 빠르고 완벽하게 끝내는가에 대한
+                                고민을 하게 되었습니다.
+                                그래서 선배들의 업무 능력을 배우기 위해 참여하지 않은 프로젝트에 대한 자료를 찾아보았고, 궁금증이 있다면 선배들에게 물어보고 배워가며 제가 맡은 일에
+                                접목을 시켜 업무 능력을 키워나갔습니다.
+                                <br>
+                                <br>
+                                두 번째는 조직에서의 소통하는 방법이었습니다. 회사에서는 클라이언트의 요구에 맞춰 팀원들의 협업으로 일이 진행이 된다는 것을 알게 되었습니다.
+                                이후에는 저만의 소통하는 법을 만들어 프로젝트를 팀원들과 함께 성사해 나아갔습니다. 많은 배움과 함께 디자이너로서 성장하여 작고
+                                큰 프로젝트를 해결해나갔습니다. 단순하게 콘텐츠 제작이 아닌 소비자들과의 소통과 이해를 바탕으로 구매까지 이어지는 디자인 작업을 했습니다.
+                                그렇게 디자이너로서의 일을 하던 중 저는 웹디자인을 할 때 웹 개발의 이해도가 필요하다고 느껴 다니던 회사를 관두게 되었습니다. 처음 시작하는
+                                새로운 분야의 도전은 저에게 많은 어려움이 있었습니다. 맨 처음 저는 인터넷 강의 영상을 보면서 이론 위주로 공부를 하였습니다. 하지만 저는 작은
+                                홈페이지 조차 혼자 만들 수가 없었습니다.
+                                혼자서 하는 공부가 힘들다고 판단이 들어 숨고라는 서비스를 찾게 되었고 개인 과외식으로 다시 코딩을 배우게 되었습니다. 작은 모듈에 대한 마크업부터
+                                시작해서 하나의 페이지를 만들기까지
+                                여러 번의 시행착오를 겪었고, 결국에는 혼자 힘으로 하나의 홈페이지를 만들게 되었습니다. 그렇게 제작을 하고 나니 더욱 욕심이 생겨 저만의 앱 서비스를
+                                만들고 싶어서
+                                청년 창업에 도전을 하게 되었습니다. 창업에 대한 이해도가 낮았기에 여러 강의들을 들으러 다니며 성실히 과제를 수행했으나 결국 실패를 하였습니다.
+                                최선을 다했기에 후회는 없었으나 아직 제 자신이 부족함이 많다고 느꼈습니다. 지금의 저는 아직까지도 작은 돌멩이 입니다. 하지만 열심히 굴렀기에 비로소
+                                저라는 사람을 한 단계씩 발전하게 해주었습니다.
+                                <br>
+                                <br>
+                                <span>이젠 벽돌이 되고 싶습니다.</span>
+                                <br>
+                                <br>
+                                이제 저는 또 다른 도전을 하려고 합니다. 그동안 돌멩이처럼 앞만 보며 굴러왔다면, 이제는 새로운 환경의 새 업무를 배우고 추진해나갈 수 있는,
+                                즉 적재적소에 끼워질 수 있는 벽돌이 되고 싶습니다. 제가 귀사의 회사에 입사하게 된다면 저의 값진 경험들을 토대로 직장 발전을 위해
+                                자그마한 벽돌 하나가 되겠습니다. 감사합니다.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide no-wrap">
+                        <div class="text-box">
+                            <h1>Thank you</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-back"></div>
+
+    <section class="section2 sec sec2">
         <div class="contents">
             <div class="top">
                 <h2>About Me</h2>
@@ -120,8 +256,8 @@
             <div class="wrap clearfix">
                 <div class="col-1">
                     <p>안녕하세요? 제 이름은 강가영입니다. <br>
-                    디자인으로 일하던 중 프로그래밍에 관심이 있어서 커리어 전환을 하게 되었습니다.<br>
-                    프로그래밍에 대해 아직 부족한 점이 많지만, 노력하고 열심히 하는 개발자가 되겠습니다.                   
+                        디자인으로 일하던 중 프로그래밍에 관심이 있어서 커리어 전환을 하게 되었습니다.<br>
+                        프로그래밍에 대해 아직 부족한 점이 많지만, 노력하고 열심히 하는 개발자가 되겠습니다.
                     </p>
                 </div>
                 <div class="col-2">
@@ -183,50 +319,50 @@
         </div>
     </section>
 
-    <section class="section3"> 
+    <section class="section3 sec sec3">
         <div class="contents">
-           <div class="top">
-               <h2>Latest Works</h2>
-               <p>제가 참여 및 작업한 웹사이트 입니다. 아래에 이미지를 누르시면 작업했던 사이트를 직접 보실 수 있습니다.</p>
-           </div>
+            <div class="top">
+                <h2>Latest Works</h2>
+                <p>제가 참여 및 작업한 웹사이트 입니다. 아래에 이미지를 누르시면 작업했던 사이트를 직접 보실 수 있습니다.</p>
+            </div>
         </div>
-        <div class="swiper-container">
+        <div class="swiper-container swiper-container2">
             <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                      <a href="http://www.atarad.io/mbs/main.mbs?menu=main" class="img"></a>
-                      <a href="http://www.atarad.io/mbs/main.mbs?menu=main" class="slide-back"></a>
-                         <div class="plus-line">
-                            <span></span><span></span>
-                        </div> 
-                  </div>
-                  <div class="swiper-slide">
-                        <a href="http://www.rootedpartners.com/" class="img"></a>
-                        <a href="http://www.rootedpartners.com/" class="slide-back"></a>
-                        <div class="plus-line">
-                           <span></span><span></span>
-                       </div> 
-                  </div>
-                  <div class="swiper-slide">
-                        <a href="http://www.blockcast.io/" class="img"></a>
-                        <a href="http://www.blockcast.io/" class="slide-back"></a>
-                        <div class="plus-line">
-                           <span></span><span></span>
-                       </div> 
-                  </div>
-                  <div class="swiper-slide">
-                        <a href="http://www.airdropost.com/main.ai?filter=closed" class="img"></a>
-                        <a href="http://www.airdropost.com/main.ai?filter=closed" class="slide-back"></a>
-                        <div class="plus-line">
-                           <span></span><span></span>
-                       </div> 
-                  </div>
-                  <div class="swiper-slide">
-                        <a href="http://www.atarad.io/orbs/main.orbs" class="img"></a>
-                        <a href="http://www.atarad.io/orbs/main.orbs" class="slide-back"></a>
-                        <div class="plus-line">
-                           <span></span><span></span>
-                       </div> 
-                  </div>
+                <div class="swiper-slide">
+                    <a href="http://www.atarad.io/mbs/main.mbs?menu=main" class="img"></a>
+                    <a href="http://www.atarad.io/mbs/main.mbs?menu=main" class="slide-back"></a>
+                    <div class="plus-line">
+                        <span></span><span></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="http://www.rootedpartners.com/" class="img"></a>
+                    <a href="http://www.rootedpartners.com/" class="slide-back"></a>
+                    <div class="plus-line">
+                        <span></span><span></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="http://www.blockcast.io/" class="img"></a>
+                    <a href="http://www.blockcast.io/" class="slide-back"></a>
+                    <div class="plus-line">
+                        <span></span><span></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="http://www.airdropost.com/main.ai?filter=closed" class="img"></a>
+                    <a href="http://www.airdropost.com/main.ai?filter=closed" class="slide-back"></a>
+                    <div class="plus-line">
+                        <span></span><span></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="http://www.atarad.io/orbs/main.orbs" class="img"></a>
+                    <a href="http://www.atarad.io/orbs/main.orbs" class="slide-back"></a>
+                    <div class="plus-line">
+                        <span></span><span></span>
+                    </div>
+                </div>
             </div>
             <!-- Add Arrows -->
             <div class="swiper-button-next"></div>
@@ -234,15 +370,15 @@
         </div>
     </section>
 
-    <section class="section4">
+    <section class="section4 sec sec4">
         <div class="img-back">
             <div class="back">
                 <div class="text-wrap">
-                    <h2>Do you like my work?<br> 
-                    Let's create something wonderful together.</h2>
+                    <h2>Do you like my work?<br>
+                        Let's create something wonderful together.</h2>
                     <a class="btn" href="#">contact Me</a>
                 </div>
-             </div>
+            </div>
         </div>
     </section>
 
@@ -251,9 +387,9 @@
             <div class="text-box">
                 <h2>Services</h2>
                 <p>제가 할 수 있는 서비스입니다.<br>
-                <p> 웹 프로그래밍으로 원하는 웹 사이트를 제작 할 수 있으며,
-                    디자인 작업은 웹 디자인, 패키지, 편집을 할 수 있습니다.
-                </p>
+                    <p> 웹 프로그래밍으로 원하는 웹 사이트를 제작 할 수 있으며,
+                        디자인 작업은 웹 디자인, 패키지, 편집을 할 수 있습니다.
+                    </p>
             </div>
             <ul class="clearfix">
                 <li>
@@ -270,7 +406,7 @@
         </div>
     </section>
 
-    <section class="section6">
+    <section class="section6 sec sec5">
         <div class="contents">
             <div class="top">
                 <h2>Get in touch</h2>
@@ -318,73 +454,138 @@
         <p>© 2018 Gysite. All Rights Reserved</p>
     </footer>
 
-   <script>
-    //    $(window).scroll(function () { var scrollValue = $(document).scrollTop(); console.log(scrollValue); });
-    
-    // header scroll event
-    let header = document.querySelector('header');
+    <script>
+        //    $(window).scroll(function () { var scrollValue = $(document).scrollTop(); console.log(scrollValue); });
 
-     window.addEventListener('scroll', function() {
-        if(window.scrollY >= 381){
-            header.classList.add('active'); 
-        } 
-        else header.classList.remove('active');
-    });
-    
-    // scrolltop event
-    $(document).ready(function() {
-		$(window).scroll(function() {
-			if ($(this).scrollTop() > 200) {
-				$('.scroll-top').fadeIn();
-			} else {
-				$('.scroll-top').fadeOut();
-			}
-		});
-		$('.scroll-top').click(function() {
-			$('html, body').animate({
-				scrollTop : 0
-			}, 400);
-			return false;
-		});
-	});
-    // menu event
-    let menu = document.querySelector('.menu');
-    let mNav = document.querySelector('.m-nav');
-    let close = document.querySelector('.close');
-    let back = document.querySelector('.m-back');
+        // header scroll event
+        let header = document.querySelector('header');
 
-    menu.addEventListener("click", function() {
-        menu.classList.add("active");
-        mNav.classList.add("active");
-        back.classList.add("active");
-    });
-    close.addEventListener("click", function() {
-        mNav.classList.remove("active");
-        menu.classList.remove("active");
-        back.classList.remove("active");
-    });
-    back.addEventListener("click", function () {
-        mNav.classList.remove("active");
-        menu.classList.remove("active");
-        close.classList.remove("active");
-    })
-    // swiper 
-     var swiper = new Swiper('.swiper-container', {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY >= 381) {
+                if (!header.classList.contains('active')) {
+                    header.classList.add('active');
+                }
+            }
+            else header.classList.remove('active');
+        });
+
+        // modal event
+        var closBtn = document.querySelector('.clos-btn');
+        var modal = document.querySelector('.modal');
+        var openBtn= document.querySelector('.pro-modal');
+        var modalBack = document.querySelector('.modal-back');
+
+        function modalRemove () {
+            openBtn.classList.remove("active");
+            modal.classList.remove("active");
+            closBtn.classList.remove("active");
+            modalBack.classList.remove("active");
+        }
+
+        openBtn.addEventListener("click", function () {
+            openBtn.classList.add("active");
+            modal.classList.add("active");
+            closBtn.classList.add("active");
+            modalBack.classList.add("active");
+        });
+        
+        modalBack.addEventListener("click", modalRemove);
+        closBtn.addEventListener("click", modalRemove);
+
+        var swiper1 = new Swiper('.swiper-container1', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+
+
+
+        // nav click event
+        // let section = document.querySelectorAll(".sec");
+        // console.log(section)
+        // let navBtn = document.querySelectorAll(".on-click");
+        // console.log(navBtn)
+        // let body = document.querySelector("body");
+
+        // function arr(x) {
+        //     return function() {
+        //         for (let i = 0; i < section.length; i++) {
+        //             x = section[i].offsetTop
+        //             return x;
+        //         }
+        //     }
+        // } 
+
+        // for (let a = 0; a < navBtn.length; a++) {
+        //     navBtn[a].addEventListener("click", function () {
+        //         body.scrollTop = arr
+        //         console.log(arr)
+        //     });
+        // }
+
+        // let top = section.offsetTop
+        // body.scrollTop=top
+        // body.scrollTop= sec.offsetTop
+
+        // scrolltop event
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.scroll-top').fadeIn();
+                } else {
+                    $('.scroll-top').fadeOut();
+                }
+            });
+            $('.scroll-top').click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });
+
+        // menu event
+        let menu = document.querySelector('.menu');
+        let mNav = document.querySelector('.m-nav');
+        let close = document.querySelector('.close');
+        let back = document.querySelector('.m-back');
+        let btn2 = document.querySelector('header .contents .m-nav ul li button');
+
+        function remove() {
+            mNav.classList.remove("active");
+            menu.classList.remove("active");
+            close.classList.remove("active");
+            back.classList.remove("active");
+        }
+
+        menu.addEventListener("click", function () {
+            menu.classList.add("active");
+            mNav.classList.add("active");
+            back.classList.add("active");
+        });
+        close.addEventListener("click", remove);
+        back.addEventListener("click", remove);
+        btn2.addEventListener("click", remove);
+
+        // swiper 
+        var swiper2 = new Swiper('.swiper-container2', {
             slidesPerView: 2,
             spaceBetween: 30,
             centeredSlides: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
 
-    // map api
-    let Maplocation = new google.maps.LatLng(37.358019, 126.932969);
+        // map api
+        let Maplocation = new google.maps.LatLng(37.358019, 126.932969);
         var mapProp = {
             center: Maplocation,
             zoom: 18,
@@ -396,6 +597,9 @@
             map: map,
             title: '서대전네거리역이지롱~' // 마커에 마우스 포인트를 갖다댔을 때 뜨는 타이틀
         });
-  </script>
+
+
+    </script>
 </body>
+
 </html>
