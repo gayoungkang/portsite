@@ -143,8 +143,8 @@
                                 <span class="date">2015</span>
                                 <div class="text">
                                     <span class="sub-title">(주) 왓이짓 입사</span>
-                                    <p>블록체인 사업 | 에이전시 및 무역.제조 사업<br>
-                                        주요 업무 작업 : CSS3, HTML5, 자바스크립트</p>
+                                    <p>패션 사업 | 유통.무역.제조 사업<br>
+                                        주요 업무 작업 : 웹 디자인 / MD / 상품 및 편집 디자인</p>
                                 </div>
                             </div>
                             <div class="col clearfix">
@@ -159,8 +159,8 @@
                                 <span class="date">2018</span>
                                 <div class="text">
                                     <span class="sub-title">(주) 루티드파트너스</span>
-                                    <p>패션 사업 | 유통.무역.제조 사업<br>
-                                        주요 업무 작업 : 웹 디자인 / MD / 상품 및 편집 디자인</p>
+                                    <p>블록체인 사업 | 에이전시 및 무역.제조 사업<br>
+                                        주요 업무 작업 : CSS3, HTML5, 자바스크립트</p>
                                 </div>
                             </div>
                         </div>
@@ -503,27 +503,29 @@
 
 
         // nav click event
-        // let section = document.querySelectorAll(".sec");
-        // console.log(section)
-        // let navBtn = document.querySelectorAll(".on-click");
-        // console.log(navBtn)
-        // let body = document.querySelector("body");
+        let section = document.querySelectorAll(".sec");
+        console.log(section)
+        let navBtn = document.querySelectorAll(".on-click");
+        console.log(navBtn)
+        let body = document.querySelector("body");
 
-        // function arr(x) {
-        //     return function() {
-        //         for (let i = 0; i < section.length; i++) {
-        //             x = section[i].offsetTop
-        //             return x;
-        //         }
-        //     }
-        // } 
 
-        // for (let a = 0; a < navBtn.length; a++) {
-        //     navBtn[a].addEventListener("click", function () {
-        //         body.scrollTop = arr
-        //         console.log(arr)
-        //     });
-        // }
+        function arry (sec) {
+            for (let i = 0; i < section.length; i++) {
+               let secTop = section[i].offsetTop+83
+               console.log(section[3].offsetTop+83)
+                return secTop 
+            }
+        }
+            // for (let y=0; y < navBtn.length; y++) {
+            //     navBtn[y].addEventListener("click", function () {
+            //         body.scrollTop = arry()
+            //         console.log(body.scrollTop = arry())
+            //     });
+            // }
+
+
+ 
 
         // let top = section.offsetTop
         // body.scrollTop=top
