@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>gysite</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/subpg.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap" rel="stylesheet">
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="contents">
+            <h1><a href="./">gysite</a></h1>
+            <nav class="web-nav clearfix">
+                <ul class="clearfix">
+                    <li><a href="#main-pg">Home</a></li>
+                    <li><a href="#about-pg">About Me</a></li>
+                    <li><a href="#works-pg">Portfolio</a></li>
+                    <li><a href="#service-pg">Service</a></li>
+                    <li><a href="#touch-pg">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="m-wrap">
+                <img class="menu" src="../img/menu.png" alt="menu">
+                <div class="m-back">
+                    <nav class="m-nav">
+                        <img class="close" src="../img/close.png" alt="close">
+                        <ul class="clearfix">
+                            <li><a href="#main-pg">Home</a></li>
+                            <li><a href="#about-pg">About Me</a></li>
+                            <li><a href="#works-pg">Portfolio</a></li>
+                            <li><a href="#service-pg">Service</a></li>
+                            <li><a href="#touch-pg">Contact</a></li>
+                        </ul>
+                </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="wrap">
+                    <div class="col-1">
+                        <div class="img"></div>
+                    </div>
+                    <div class="text-wrap">
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+    });
+    </script>
+</body>
+</html>

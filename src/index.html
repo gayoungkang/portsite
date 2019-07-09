@@ -8,7 +8,9 @@
     <title>gysite</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap" rel="stylesheet">
     <script src="../js/swiper.min.js"></script>
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -19,14 +21,14 @@
 
     <header>
         <div class="contents">
-            <h1>gysite</h1>
+            <h1><a href="./">gysite</a></h1>
             <nav class="web-nav clearfix">
                 <ul class="clearfix">
-                    <li><button type="button" class="on-click" data-target=".sec1">Home</button></li>
-                    <li><button type="button" class="on-click" data-target=".sec2">About Me</button></li>
-                    <li><button type="button" class="on-click" data-target=".sec3">Portfolio</button></li>
-                    <li><button type="button" class="on-click" data-target=".sec4">Service</button></li>
-                    <li><button type="button" class="on-click" data-target=".sec5">Contact</button></li>
+                    <li><a href="#main-pg">Home</a></li>
+                    <li><a href="#about-pg">About Me</a></li>
+                    <li><a href="#works-pg">Portfolio</a></li>
+                    <li><a href="#service-pg">Service</a></li>
+                    <li><a href="#touch-pg">Contact</a></li>
                 </ul>
             </nav>
             <div class="m-wrap">
@@ -35,22 +37,22 @@
                     <nav class="m-nav">
                         <img class="close" src="../img/close.png" alt="close">
                         <ul class="clearfix">
-                            <li><button type="button">Home</button></li>
-                            <li><button type="button">About Me</button></li>
-                            <li><button type="button">Portfolio</button></li>
-                            <li><button type="button">Service</button></li>
-                            <li><button type="button">Contact</button></li>
+                            <li><a href="#main-pg">Home</a></li>
+                            <li><a href="#about-pg">About Me</a></li>
+                            <li><a href="#works-pg">Portfolio</a></li>
+                            <li><a href="#service-pg">Service</a></li>
+                            <li><a href="#touch-pg">Contact</a></li>
                         </ul>
+                    </nav>
                 </div>
-                </nav>
             </div>
         </div>
     </header>
 
-    <section class="section sec sec1">
+    <section class="section" id="main-pg">
         <div class="contents">
             <div class="text-ani">
-                <h1>Hello!</h1>
+                <h2>Hello!</h2>
                 <ul class="clearfix">
                     <li>gayoung</li>
                     <li>portfolio</li>
@@ -58,7 +60,7 @@
                 </ul>
             </div>
             <p>안녕하세요. 제 포트폴리오 웹 사이트에 오신것을 환영합니다. 아직 부족한 웹 사이트이지만, 열심히 작업해서 새로운 프로젝트를 업데이트 할 예정입니다. </p>
-            <a class="more-btn" href="#">READ MORE</a>
+            <button class="more-btn" type="button">READ MORE</button>
         </div>
     </section>
 
@@ -66,9 +68,9 @@
         <div class="contents">
             <ul class="clearfix">
                 <li>
-                    <a href="#" class="pro-modal">
+                    <a href="./subpg.html" class="pro-modal">
                         <div class="text">
-                            <p>Profile</p>
+                            <h4>Study</h4>
                         </div>
                         <div class="back"></div>
                         <div class="plus-line">
@@ -77,9 +79,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://justgy.tistory.com/">
+                    <a href="https://justgy.tistory.com/" target="_blank">
                         <div class="text">
-                            <p>Blog</p>
+                            <h4>Blog</h4>
                         </div>
                         <div class="back"></div>
                         <div class="plus-line">
@@ -88,9 +90,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/gayoungkang">
+                    <a href="https://github.com/gayoungkang" target="_blank">
                         <div class="text">
-                            <p>Git</p>
+                            <h4>Git</h4>
                         </div>
                         <div class="back"></div>
                         <div class="plus-line">
@@ -99,9 +101,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.behance.net/kathy5742fe59">
+                    <a href="https://www.behance.net/kathy5742fe59" target="_blank">
                         <div class="text">
-                            <p>Behance</p>
+                            <h4>Behance</h4>
                         </div>
                         <div class="back"></div>
                         <div class="plus-line">
@@ -121,7 +123,7 @@
                     <div class="swiper-slide no-wrap">
                         <div class="text-box">
                             <span>D E V E L O P E R</span>
-                            <h1>G A Y O U N G K A N G</h1>
+                            <h3>G A Y O U N G K A N G</h3>
                             <p>CURRICULUM VITAE</p>
                         </div>
                     </div>
@@ -235,7 +237,7 @@
                     </div>
                     <div class="swiper-slide no-wrap">
                         <div class="text-box">
-                            <h1>Thank you</h1>
+                            <h3>Thank you</h3>
                         </div>
                     </div>
                 </div>
@@ -247,7 +249,7 @@
     </div>
     <div class="modal-back"></div>
 
-    <section class="section2 sec sec2">
+    <section class="section2" id="about-pg">
         <div class="contents">
             <div class="top">
                 <h2>About Me</h2>
@@ -319,7 +321,7 @@
         </div>
     </section>
 
-    <section class="section3 sec sec3">
+    <section class="section3" id="works-pg">
         <div class="contents">
             <div class="top">
                 <h2>Latest Works</h2>
@@ -329,36 +331,43 @@
         <div class="swiper-container swiper-container2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="http://www.atarad.io/mbs/main.mbs?menu=main" class="img"></a>
-                    <a href="http://www.atarad.io/mbs/main.mbs?menu=main" class="slide-back"></a>
+                    <a href="https://loaprotocol.io/" class="img" target="_blank"></a>
+                    <a href="https://loaprotocol.io/" class="slide-back" target="_blank"></a>
                     <div class="plus-line">
                         <span></span><span></span>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="http://www.rootedpartners.com/" class="img"></a>
-                    <a href="http://www.rootedpartners.com/" class="slide-back"></a>
+                    <a href="http://www.atarad.io/mbs/main.mbs?menu=main" class="img" target="_blank"></a>
+                    <a href="http://www.atarad.io/mbs/main.mbs?menu=main" class="slide-back" target="_blank"></a>
                     <div class="plus-line">
                         <span></span><span></span>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="http://www.blockcast.io/" class="img"></a>
-                    <a href="http://www.blockcast.io/" class="slide-back"></a>
+                    <a href="http://www.rootedpartners.com/" class="img" target="_blank"></a>
+                    <a href="http://www.rootedpartners.com/" class="slide-back" target="_blank"></a>
                     <div class="plus-line">
                         <span></span><span></span>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="http://www.airdropost.com/main.ai?filter=closed" class="img"></a>
-                    <a href="http://www.airdropost.com/main.ai?filter=closed" class="slide-back"></a>
+                    <a href="http://www.blockcast.io/" class="img" target="_blank"></a>
+                    <a href="http://www.blockcast.io/" class="slide-back" target="_blank"></a>
                     <div class="plus-line">
                         <span></span><span></span>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="http://www.atarad.io/orbs/main.orbs" class="img"></a>
-                    <a href="http://www.atarad.io/orbs/main.orbs" class="slide-back"></a>
+                    <a href="http://www.airdropost.com/main.ai?filter=closed" class="img" target="_blank"></a>
+                    <a href="http://www.airdropost.com/main.ai?filter=closed" class="slide-back" target="_blank"></a>
+                    <div class="plus-line">
+                        <span></span><span></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <a href="http://www.atarad.io/orbs/main.orbs" class="img" target="_blank"></a>
+                    <a href="http://www.atarad.io/orbs/main.orbs" class="slide-back" target="_blank"></a>
                     <div class="plus-line">
                         <span></span><span></span>
                     </div>
@@ -370,19 +379,19 @@
         </div>
     </section>
 
-    <section class="section4 sec sec4">
+    <section class="section4">
         <div class="img-back">
             <div class="back">
                 <div class="text-wrap">
                     <h2>Do you like my work?<br>
                         Let's create something wonderful together.</h2>
-                    <a class="btn" href="#">contact Me</a>
+                    <a class="btn" href="mailto:gayoung425@gmail.com" target="_blank">contact Me</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section5">
+    <section class="section5" id="service-pg">
         <div class="contents clearfix">
             <div class="text-box">
                 <h2>Services</h2>
@@ -406,7 +415,7 @@
         </div>
     </section>
 
-    <section class="section6 sec sec5">
+    <section class="section6" id="touch-pg">
         <div class="contents">
             <div class="top">
                 <h2>Get in touch</h2>
@@ -438,44 +447,33 @@
         </div>
     </section>
 
-    <section class="section7">
+    <div class="section7">
         <div class="map"></div>
-    </section>
+    </div>
 
     <footer>
         <div class="contents">
             <ul class="sns-link clearfix">
-                <li><a href="#"><img src="../img/i-6.png" alt="아이콘6"></a></li>
+                <li><a href="https://www.behance.net/kathy5742fe59" target="_blank"><img src="../img/i-6.png" alt="아이콘6"></a></li>
                 <li><a href="#"><img src="../img/i-7.png" alt="아이콘7"></a></li>
-                <li><a href="#"><img src="../img/i-8.png" alt="아이콘8"></a></li>
+                <li><a href="mailto:gayoung425@gmail.com" target="_blank"><img src="../img/i-8.png" alt="아이콘8"></a></li>
                 <li><a href="#"><img src="../img/i-9.png" alt="아이콘9"></a></li>
             </ul>
         </div>
         <p>© 2018 Gysite. All Rights Reserved</p>
     </footer>
 
+    <script src="../js/common.js"></script>
     <script>
         //    $(window).scroll(function () { var scrollValue = $(document).scrollTop(); console.log(scrollValue); });
-
-        // header scroll event
-        let header = document.querySelector('header');
-
-        window.addEventListener('scroll', function () {
-            if (window.scrollY >= 381) {
-                if (!header.classList.contains('active')) {
-                    header.classList.add('active');
-                }
-            }
-            else header.classList.remove('active');
-        });
 
         // modal event
         var closBtn = document.querySelector('.clos-btn');
         var modal = document.querySelector('.modal');
-        var openBtn= document.querySelector('.pro-modal');
+        var openBtn = document.querySelector('.more-btn');
         var modalBack = document.querySelector('.modal-back');
 
-        function modalRemove () {
+        function modalRemove() {
             openBtn.classList.remove("active");
             modal.classList.remove("active");
             closBtn.classList.remove("active");
@@ -488,52 +486,148 @@
             closBtn.classList.add("active");
             modalBack.classList.add("active");
         });
-        
+
         modalBack.addEventListener("click", modalRemove);
         closBtn.addEventListener("click", modalRemove);
-
-        var swiper1 = new Swiper('.swiper-container1', {
+        
+        var swiper = new Swiper('.swiper-container1', {
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
         });
 
-
-
-
         // nav click event
-        let section = document.querySelectorAll(".sec");
-        console.log(section)
-        let navBtn = document.querySelectorAll(".on-click");
-        console.log(navBtn)
-        let body = document.querySelector("body");
+        let speed = 700;
 
-
-        function arry (sec) {
-            for (let i = 0; i < section.length; i++) {
-               let secTop = section[i].offsetTop+83
-               console.log(section[3].offsetTop+83)
-                return secTop 
+        function scrolling(obj) {
+            if (!obj) {
+                $('html, body').animate({ scrollTop: 0 }, speed);
+            } else {
+                var posTop = $(obj).offset().top - 78;
+                $('html, body').animate({ scrollTop: posTop }, speed)
             }
-        }
-            // for (let y=0; y < navBtn.length; y++) {
-            //     navBtn[y].addEventListener("click", function () {
-            //         body.scrollTop = arry()
-            //         console.log(body.scrollTop = arry())
-            //     });
-            // }
+        };
 
+        $("ul li a").click(function () {
+            var direction = $(this).attr("href");
+            scrolling(direction);
+            return false;
+        });
 
- 
+        // motion event
+        var windowH = $(window).height();
+        var marginT = windowH / 2;
 
-        // let top = section.offsetTop
-        // body.scrollTop=top
-        // body.scrollTop= sec.offsetTop
+        let aboutText = document.querySelector('.section2 .top');
+        let aboutCoLeft = document.querySelector('.section2 .col-1');
+        let aboutSection = document.querySelector('.section2');
+        let aboutColRight = document.querySelector('.section2 .col-2');
+        let line = document.querySelectorAll('.section2 .line');
+        let aboutSectionTop = aboutSection.offsetTop;
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= aboutSectionTop - marginT) {
+                if (!aboutText.classList.contains('active')) {
+                    aboutText.classList.add('active');
+                }
+                if (!aboutCoLeft.classList.contains('active')) {
+                    aboutCoLeft.classList.add('active');
+                }
+                if (!aboutColRight.classList.contains('active')) {
+                    aboutColRight.classList.add('active');
+                }
+            }
+            else {
+                aboutText.classList.remove('active');
+                aboutCoLeft.classList.remove('active');
+                aboutColRight.classList.remove('active');
+            }
+            if ($(this).scrollTop() >= aboutSectionTop - marginT) {
+            for (let q = 0; q < line.length; q++) {
+                let lineArray = line[q];
+                if (!lineArray.classList.contains('active')) {
+                    lineArray.classList.add('active');
+                }
+                else {
+                    lineArray.classList.remove('active');
+                }
+            }
+            }
+        });
+
+        let portfolioSection = document.querySelector('.section3');
+        let portfolioText = document.querySelector('.section3 .top');
+        let portfolioSectionTop = portfolioSection.offsetTop;
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= portfolioSectionTop - marginT) {
+                if (!portfolioText.classList.contains('active')) {
+                    portfolioText.classList.add('active');
+                }
+            }
+            else {
+                portfolioText.classList.remove('active');
+            }
+        });
+
+        let serviceSection = document.querySelector('.section5');
+        let serviceText = document.querySelector('.section5 .text-box');
+        let serviceUl = document.querySelectorAll('.section5 ul li');
+        let serviceSectionTop = serviceSection.offsetTop;
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= serviceSectionTop - marginT) {
+                if (!serviceText.classList.contains('active')) {
+                    serviceText.classList.add('active');
+                }
+            }
+            else {
+                serviceText.classList.remove('active');
+            }
+            if ($(this).scrollTop() >= serviceSectionTop - marginT) {
+            for (let w = 0; w < serviceUl.length; w++) {
+                let serviceUlArray = serviceUl[w];
+                if (!serviceUlArray.classList.contains('active')) {
+                    serviceUlArray.classList.add('active');
+                }
+                else {
+                    serviceUlArray.classList.remove('active');
+                }
+            }
+            }
+        });
+
+        let contactSection = document.querySelector('.section6');
+        let contactText = document.querySelector('.section6 .top');
+        let contactList = document.querySelectorAll('.section6 ul li');
+        let contactSectionTop = contactSection.offsetTop;
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= contactSectionTop - marginT) {
+                if (!contactText.classList.contains('active')) {
+                    contactText.classList.add('active');
+                }
+            }
+            else {
+                contactText.classList.remove('active');
+            }
+            if ($(this).scrollTop() >= contactSectionTop - marginT) {
+            for (let r = 0; r < contactList.length; r++) {
+                let contactListArray = contactList[r];
+                if (!contactListArray.classList.contains('active')) {
+                    contactListArray.classList.add('active');
+                }
+                else {
+                    contactListArray.classList.remove('active');
+                }
+            }
+            }
+        });
 
         // scrolltop event
         $(document).ready(function () {
-            $(window).scroll(function () {
+            $($(window)).scroll(function () {
                 if ($(this).scrollTop() > 200) {
                     $('.scroll-top').fadeIn();
                 } else {
@@ -546,44 +640,6 @@
                 }, 400);
                 return false;
             });
-        });
-
-        // menu event
-        let menu = document.querySelector('.menu');
-        let mNav = document.querySelector('.m-nav');
-        let close = document.querySelector('.close');
-        let back = document.querySelector('.m-back');
-        let btn2 = document.querySelector('header .contents .m-nav ul li button');
-
-        function remove() {
-            mNav.classList.remove("active");
-            menu.classList.remove("active");
-            close.classList.remove("active");
-            back.classList.remove("active");
-        }
-
-        menu.addEventListener("click", function () {
-            menu.classList.add("active");
-            mNav.classList.add("active");
-            back.classList.add("active");
-        });
-        close.addEventListener("click", remove);
-        back.addEventListener("click", remove);
-        btn2.addEventListener("click", remove);
-
-        // swiper 
-        var swiper2 = new Swiper('.swiper-container2', {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            centeredSlides: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
         });
 
         // map api
