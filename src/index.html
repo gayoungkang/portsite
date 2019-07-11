@@ -19,6 +19,10 @@
 <body>
     <button class="scroll-top">scrolltop</button>
 
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+
     <header>
         <div class="contents">
             <h1><a href="./">gysite</a></h1>
@@ -467,6 +471,11 @@
     <script>
         //    $(window).scroll(function () { var scrollValue = $(document).scrollTop(); console.log(scrollValue); });
 
+        // loading
+        window.onload = function() {
+            document.all.loading.style.display='none'
+        }
+
         // modal event
         var closBtn = document.querySelector('.clos-btn');
         var modal = document.querySelector('.modal');
@@ -504,7 +513,7 @@
             if (!obj) {
                 $('html, body').animate({ scrollTop: 0 }, speed);
             } else {
-                var posTop = $(obj).offset().top - 78;
+                var posTop = $(obj).offset().top - 83;
                 $('html, body').animate({ scrollTop: posTop }, speed)
             }
         };
@@ -543,17 +552,15 @@
                 aboutCoLeft.classList.remove('active');
                 aboutColRight.classList.remove('active');
             }
-            if ($(this).scrollTop() >= aboutSectionTop - marginT) {
-            for (let q = 0; q < line.length; q++) {
-                let lineArray = line[q];
-                if (!lineArray.classList.contains('active')) {
-                    lineArray.classList.add('active');
+            for (let q=0; q<line.length; q++) {
+                let lineArray =  line[q];
+                if($(this).scrollTop() >= aboutSectionTop-marginT){
+                    if(!lineArray.classList.contains('active')) {
+                        lineArray.classList.add('active');
+                    }
                 }
-                else {
-                    lineArray.classList.remove('active');
-                }
-            }
-            }
+                else lineArray.classList.remove('active');
+             }   
         });
 
         let portfolioSection = document.querySelector('.section3');
@@ -585,16 +592,14 @@
             else {
                 serviceText.classList.remove('active');
             }
-            if ($(this).scrollTop() >= serviceSectionTop - marginT) {
             for (let w = 0; w < serviceUl.length; w++) {
                 let serviceUlArray = serviceUl[w];
-                if (!serviceUlArray.classList.contains('active')) {
-                    serviceUlArray.classList.add('active');
+                if($(this).scrollTop() >= serviceSectionTop-marginT){
+                    if(!serviceUlArray.classList.contains('active')) {
+                        serviceUlArray.classList.add('active');
+                    }
                 }
-                else {
-                    serviceUlArray.classList.remove('active');
-                }
-            }
+                else serviceUlArray.classList.remove('active');
             }
         });
 
@@ -612,16 +617,14 @@
             else {
                 contactText.classList.remove('active');
             }
-            if ($(this).scrollTop() >= contactSectionTop - marginT) {
             for (let r = 0; r < contactList.length; r++) {
                 let contactListArray = contactList[r];
-                if (!contactListArray.classList.contains('active')) {
-                    contactListArray.classList.add('active');
+                if($(this).scrollTop() >= contactSectionTop-marginT){
+                    if(!contactListArray.classList.contains('active')) {
+                        contactListArray.classList.add('active');
+                    }
                 }
-                else {
-                    contactListArray.classList.remove('active');
-                }
-            }
+                else contactListArray.classList.remove('active');
             }
         });
 

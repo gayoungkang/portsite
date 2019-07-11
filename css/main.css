@@ -177,7 +177,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-.section1  .contents ul li a:hover p {
+.section1  .contents ul li a:hover h4 {
     display: none;
 }
 .section1  .contents ul li a:hover .plus-line span {
@@ -187,11 +187,13 @@
     transform-origin: bottom;
     transition: all .2s ease-out;
     -webkit-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
 }
 .section1  .contents ul li a:hover .plus-line span:last-child { 
     transform-origin: center;
     transition: all .2s ease-out 0.1s;
     -webkit-transition: all .2s ease-out 0.1s;
+    -ms-transition: all .2s ease-out;
 }
 .plus-line {
     position: absolute;
@@ -217,6 +219,7 @@
     transform-origin: top;
     transition: all .2s ease-in 0.1s;
     -webkit-transition: all .2s ease-in 0.1s;
+    -ms-transition: all .2s ease-out;
 }
 .plus-line span:last-child {
     left: -1%;
@@ -224,6 +227,7 @@
     transform-origin: left;
     transition: all .2s ease-in;
     -webkit-transition: all .2s ease-in;
+    -ms-transition: all .2s ease-out;
 }
 /* Profile-modal start */
 /* modal active */
@@ -616,18 +620,20 @@
 .swiper-container2 .swiper-slide:hover .slide-back {
     width: 100%;
 }
-.swiper-container2 .swiper-slide:hover:hover .plus-line span {
+.swiper-container2 .swiper-slide:hover .plus-line span {
     width: 100%;
 }
 .swiper-container2 .swiper-slide:hover  .plus-line span:first-child  { 
     transform-origin: bottom;
     transition: all .2s ease-out;
     -webkit-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
 }
 .swiper-container2 .swiper-slide:hover  .plus-line span:last-child { 
     transform-origin: center;
     transition: all .2s ease-out 0.1s;
     -webkit-transition: all .2s ease-out 0.1s;
+    -ms-transition: all .2s ease-out;
 }
 .swiper-container2 .swiper-slide:nth-child(1) .img {
     background-image: url('../img/project0.png')
@@ -709,7 +715,7 @@
 }
 /* section5 start */
 .section5 {
-    padding-top: 80px;
+    padding-top: 10%;
     background-color: #fff;
 }
 .section5 .contents .text-box {
