@@ -221,6 +221,10 @@ h2 {
     background-color: #16a085;
     font-weight: 700;
 }
+.btn-wrap a:hover {
+    border: 2px solid #16a085;
+    background-color: transparent;
+}
 .btn-wrap a:first-child {
     margin-right: 3%;
 }
