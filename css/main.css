@@ -71,7 +71,7 @@
 }
 .section .text-ani ul::after {
     content: "]";
-    left: initial;
+    left: auto;
     right: 0;
 }
 .section .text-ani ul li {
@@ -750,7 +750,7 @@
     padding: 10% 5%;
     float: left;
     border-radius: 5px;
-    background-color: #bdbdbd36;
+    background-color: rgba(222, 222, 222, 0.5);
     transform: scale( 0.0 );
     -webkit-transform: scale( 0.0 );
     -ms-transform: scale( 0.0 );
