@@ -152,13 +152,19 @@ header {
     top: 0;
     left: 0;
     z-index: 50;
-    padding-top: 32px;
+    padding-top: 26px;
     position: fixed;
     color: #fff;
     font-size: 1rem;
     font-weight: 400;
     background-color: #222223;
     border-bottom: 1px solid #ececec1a;
+}
+header h1 a {
+    display: block;
+}
+header img {
+    width: 37px;
 }
 header .contents {
     position: relative;
@@ -169,6 +175,7 @@ header .contents h1 {
 }
 header .contents .web-nav ul {
     float: right;
+    line-height: 37px;
 }
 header .contents .web-nav ul li {
     float: left;
@@ -245,6 +252,9 @@ header .contents .close.active {
 }
 header .contents .m-wrap .m-back.active  {
     right: 0;
+}
+nav ul li a.active {
+    color: #16a085;
 }
 /* media */
 @media only screen and (max-width:1632px) {

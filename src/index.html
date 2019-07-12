@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>gysite</title>
+    <link rel="shortcut icon" href="../img/favicon .ico">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -17,7 +18,9 @@
 </head>
 
 <body>
-    <button class="scroll-top">scrolltop</button>
+    <button class="scroll-top">
+        <img src="../img/back.png" alt="탑버튼">
+    </button>
 
     <div id="loading">
         <div class="spinner"></div>
@@ -25,10 +28,10 @@
 
     <header>
         <div class="contents">
-            <h1><a href="./">gysite</a></h1>
+            <h1><a href="./"><img src="../img/logo.png" alt="로고"></a></h1>
             <nav class="web-nav clearfix">
                 <ul class="clearfix">
-                    <li><a href="#main-pg">Home</a></li>
+                    <li><a href="#main-pg" class="active">Home</a></li>
                     <li><a href="#about-pg">About Me</a></li>
                     <li><a href="#works-pg">Portfolio</a></li>
                     <li><a href="#service-pg">Service</a></li>
@@ -41,7 +44,7 @@
                     <nav class="m-nav">
                         <img class="close" src="../img/close.png" alt="close">
                         <ul class="clearfix">
-                            <li><a href="#main-pg">Home</a></li>
+                            <li><a href="#main-pg"  class="active">Home</a></li>
                             <li><a href="#about-pg">About Me</a></li>
                             <li><a href="#works-pg">Portfolio</a></li>
                             <li><a href="#service-pg">Service</a></li>
@@ -58,9 +61,9 @@
             <div class="text-ani">
                 <h2>Hello!</h2>
                 <ul class="clearfix">
-                    <li>gayoung</li>
-                    <li>portfolio</li>
-                    <li>welcome!</li>
+                    <li>Gayoung</li>
+                    <li>Portfolio</li>
+                    <li>Welcome!</li>
                 </ul>
             </div>
             <p>안녕하세요. 제 포트폴리오 웹 사이트에 오신것을 환영합니다. 아직 부족한 웹 사이트이지만, 열심히 작업해서 새로운 프로젝트를 업데이트 할 예정입니다. </p>
@@ -522,6 +525,20 @@
             var direction = $(this).attr("href");
             scrolling(direction);
             return false;
+        });
+
+        var onClick = $("nav li a");
+
+        onClick.on("click", function() {
+            var content  = $(this).attr("href");
+            if (!$(this).hasClass("active")) {
+                onClick.removeClass("active");
+                $(this).addClass("active");
+                $(content).addClass("active");
+            } else {
+                $(this).removeClass("active");
+                $(content).removeClass("active");
+            }
         });
 
         // motion event

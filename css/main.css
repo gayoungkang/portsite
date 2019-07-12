@@ -1,24 +1,20 @@
 /* scrolltop start */
 .scroll-top {
     position: fixed;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
     z-index: 98;
     bottom: 10%;
     right: 2%;
-    font-size: 1rem;
-    color: #bfbfbf;
-    font-weight: 400;
-    transform: rotate(90deg);
-    background-color: transparent;
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.24);
 }
-.scroll-top::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: -120%;
-    transform: translateX(-50%);
-    width: 120px;
-    border-top: 1px solid #bfbfbf;
+.scroll-top img {
+    width: 40px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
 }
 /* section start */
 .section {
@@ -94,7 +90,7 @@
     width: 55%;
     margin: 0 auto;
     margin-top: 38px;
-    margin-bottom: 30px;
+    margin-bottom: 46px;
     line-height: 29px;
     color: #ecf0f1;
 }
@@ -1064,10 +1060,12 @@ footer  p {
         width: 100%;
     }
     .scroll-top {
-        right: -2%;
-    }
-    .scroll-top::before {
-        left: -151%;
+        right: 1%;
+        width: 50px;
+        height: 50px;
+    } 
+    .scroll-top img {
+        width: 27px;
     }
     .section {
         padding-top: 27%;
