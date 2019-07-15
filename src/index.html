@@ -37,7 +37,7 @@
             <h1><a href="./"><img src="../img/logo.png" alt="로고"></a></h1>
             <nav class="web-nav clearfix">
                 <ul class="clearfix">
-                    <li><a href="#main-pg" class="active">Home</a></li>
+                    <li><a href="#main-pg">Home</a></li>
                     <li><a href="#about-pg">About Me</a></li>
                     <li><a href="#works-pg">Portfolio</a></li>
                     <li><a href="#service-pg">Service</a></li>
@@ -50,7 +50,7 @@
                     <nav class="m-nav">
                         <img class="close" src="../img/close.png" alt="close">
                         <ul class="clearfix">
-                            <li><a href="#main-pg" class="active">Home</a></li>
+                            <li><a href="#main-pg">Home</a></li>
                             <li><a href="#about-pg">About Me</a></li>
                             <li><a href="#works-pg">Portfolio</a></li>
                             <li><a href="#service-pg">Service</a></li>
@@ -344,45 +344,57 @@
         <div class="swiper-container swiper-container2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="https://loaprotocol.io/" class="img" target="_blank"></a>
-                    <a href="https://loaprotocol.io/" class="slide-back" target="_blank"></a>
-                    <div class="plus-line">
-                        <span></span><span></span>
+                    <div class="wrap">
+                        <a href="https://loaprotocol.io/" class="img" target="_blank"></a>
+                        <a href="https://loaprotocol.io/" class="slide-back" target="_blank"></a>
+                        <div class="plus-line">
+                            <span></span><span></span>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="http://www.atarad.io/mbs/main.mbs?menu=main" class="img" target="_blank"></a>
-                    <a href="http://www.atarad.io/mbs/main.mbs?menu=main" class="slide-back" target="_blank"></a>
-                    <div class="plus-line">
-                        <span></span><span></span>
+                    <div class="wrap">
+                        <a href="http://www.atarad.io/mbs/main.mbs?menu=main" class="img" target="_blank"></a>
+                        <a href="http://www.atarad.io/mbs/main.mbs?menu=main" class="slide-back" target="_blank"></a>
+                        <div class="plus-line">
+                            <span></span><span></span>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="http://www.rootedpartners.com/" class="img" target="_blank"></a>
-                    <a href="http://www.rootedpartners.com/" class="slide-back" target="_blank"></a>
-                    <div class="plus-line">
-                        <span></span><span></span>
+                    <div class="wrap">
+                        <a href="http://www.rootedpartners.com/" class="img" target="_blank"></a>
+                        <a href="http://www.rootedpartners.com/" class="slide-back" target="_blank"></a>
+                        <div class="plus-line">
+                            <span></span><span></span>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="http://www.blockcast.io/" class="img" target="_blank"></a>
-                    <a href="http://www.blockcast.io/" class="slide-back" target="_blank"></a>
-                    <div class="plus-line">
-                        <span></span><span></span>
+                    <div class="wrap">
+                        <a href="http://www.blockcast.io/" class="img" target="_blank"></a>
+                        <a href="http://www.blockcast.io/" class="slide-back" target="_blank"></a>
+                        <div class="plus-line">
+                            <span></span><span></span>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="http://www.airdropost.com/main.ai?filter=closed" class="img" target="_blank"></a>
-                    <a href="http://www.airdropost.com/main.ai?filter=closed" class="slide-back" target="_blank"></a>
-                    <div class="plus-line">
-                        <span></span><span></span>
+                    <div class="wrap">
+                        <a href="http://www.airdropost.com/main.ai?filter=closed" class="img" target="_blank"></a>
+                        <a href="http://www.airdropost.com/main.ai?filter=closed" class="slide-back" target="_blank"></a>
+                        <div class="plus-line">
+                            <span></span><span></span>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <a href="http://www.atarad.io/orbs/main.orbs" class="img" target="_blank"></a>
-                    <a href="http://www.atarad.io/orbs/main.orbs" class="slide-back" target="_blank"></a>
-                    <div class="plus-line">
-                        <span></span><span></span>
+                    <div class="wrap">
+                        <a href="http://www.atarad.io/orbs/main.orbs" class="img" target="_blank"></a>
+                        <a href="http://www.atarad.io/orbs/main.orbs" class="slide-back" target="_blank"></a>
+                        <div class="plus-line">
+                            <span></span><span></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -534,20 +546,30 @@
             scrolling(direction);
             return false;
         });
-
-        var onClick = $("nav li a");
-
-        onClick.on("click", function () {
-            var content = $(this).attr("href");
-            if (!$(this).hasClass("active")) {
-                onClick.removeClass("active");
-                $(this).addClass("active");
-                $(content).addClass("active");
-            } else {
-                $(this).removeClass("active");
-                $(content).removeClass("active");
-            }
-        });
+        // nav color event
+        $(document).scroll(function(){
+                var sec1 = $('.section').offset().top;
+                var sec2 = $('.section2').offset().top-83;
+                var sec3 = $('.section3').offset().top-83;
+                var sec4 = $('.section5').offset().top-83;
+                var sec5 = $('.section6').offset().top-83;
+                if($(this).scrollTop() == sec1){
+                    $('header nav li a').removeClass('active');
+                    $('header nav li:nth-child(1) a').addClass('active');
+                } else if ($(this).scrollTop() < sec2){
+                    $('header nav li a').removeClass('active');
+                    $('header nav li:nth-child(2) a').addClass('active');
+                } else if ($(this).scrollTop() < sec3){
+                    $('header nav li a').removeClass('active');
+                    $('header nav li:nth-child(3) a').addClass('active');
+                } else if ($(this).scrollTop() < sec4){
+                    $('header nav li a').removeClass('active');
+                    $('header nav li:nth-child(4) a').addClass('active');
+                } else if ($(this).scrollTop() < sec5){
+                    $('header nav li a').removeClass('active');
+                    $('header nav li:nth-child(5) a').addClass('active');
+                } 
+            }).scroll();
 
         // motion event
         var windowH = $(window).height();

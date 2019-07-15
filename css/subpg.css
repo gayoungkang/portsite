@@ -231,7 +231,6 @@ h2 {
 }
 table {
     width: 100%;
-    table-layout: fixed;
     font-size: 1rem;
     font-weight: 300;
     text-align: left;
