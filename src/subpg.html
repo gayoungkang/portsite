@@ -458,7 +458,6 @@
         <div class="swiper-pagination"></div>
     </div>
 
-    <script src="../js/common.js"></script>
     <script>
         // settime
         function hideDiv () { 
@@ -474,9 +473,6 @@
             setInterval(function() {  
                 if(countdown != 0){
                     $('.timer').text(countdown--); 
-                TweenLite.to({ease:Power2.easeOut, onComplete: function(){
-                TweenLite.to({ease:Power2.easeOut});
-            }});
             }else {
             clearInterval(countdown);
             }

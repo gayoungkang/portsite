@@ -50,15 +50,15 @@ body {
 }
 .text-ani .text1{
     color: white;
-    font-size: 60px;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     position: relative;
     animation: text 3s infinite;
 }
 .text-ani .text2{
-    font-size: 25px;
+    font-size: 1.6rem;
     color: #16a085;
 }
 .text-ani .timer {
@@ -70,7 +70,7 @@ body {
     text-align: center;
     color: #16a085;
     font-weight: 500;
-    font-size: 5rem;
+    font-size: 50px;
     margin-top: 9%;
     background-color: #424242;
 }
@@ -231,6 +231,7 @@ h2 {
 }
 table {
     width: 100%;
+    table-layout: fixed;
     font-size: 1rem;
     font-weight: 300;
     text-align: left;
@@ -260,6 +261,25 @@ table tr {
 table td,
 table th {
     padding-left: 3%;
+}
+/* media */
+@media only screen and (max-width:1024px) {
+    html { font-size: 90% !important; }
+    .col-1, .col-2 { width: 100% !important; }
+}
+@media only screen and (max-width:768px) {
+    html { font-size: 80% !important; }
+}
+@media only screen and (max-width:480px) {
+    html { font-size: 70% !important; }
+}
+@media only screen and (max-width:420px) {
+    html { font-size: 70% !important; }
+    table {display: none;}
+    .text-ani .timer {width: 50px; height: 50px;line-height: 50px;font-size: 30px;}
+}
+@media only screen and (max-width:320px) {
+    html { font-size: 66.6% !important; }
 }
 
 
