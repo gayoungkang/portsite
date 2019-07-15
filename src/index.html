@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:type" content="http://127.0.0.1:5500/src/index.html">
+    <meta property="og:title" content="gyportfolio">
+    <meta property="og:url" content="http://127.0.0.1:5500/src/index.html">
+    <meta property="og:description" content="안녕하세요. 저의 포트폴리오 웹 사이트에 오신것을 환영합니다.">
+    <meta property="og:image" content="../img/thumbnail.png">
     <title>gysite</title>
-    <link rel="shortcut icon" href="../img/favicon .ico">
+    <link rel="shortcut icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/swiper.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap"
+        rel="stylesheet">
     <script src="../js/swiper.min.js"></script>
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -44,7 +50,7 @@
                     <nav class="m-nav">
                         <img class="close" src="../img/close.png" alt="close">
                         <ul class="clearfix">
-                            <li><a href="#main-pg"  class="active">Home</a></li>
+                            <li><a href="#main-pg" class="active">Home</a></li>
                             <li><a href="#about-pg">About Me</a></li>
                             <li><a href="#works-pg">Portfolio</a></li>
                             <li><a href="#service-pg">Service</a></li>
@@ -461,10 +467,14 @@
     <footer>
         <div class="contents">
             <ul class="sns-link clearfix">
-                <li><a href="https://github.com/gayoungkang" target="_blank"><img src="../img/footer01.png" alt="아이콘6"></a></li>
-                <li><a href="mailto:gayoung425@gmail.com" target="_blank"><img src="../img/footer02.png" alt="아이콘7"></a></li>
-                <li><a href="https://justgy.tistory.com/" target="_blank"><img src="../img/footer03.png" alt="아이콘8"></a></li>
-                <li><a href="https://www.behance.net/kathy5742fe59" target="_blank"><img src="../img/footer04.png" alt="아이콘9"></a></li>
+                <li><a href="https://github.com/gayoungkang" target="_blank"><img src="../img/footer01.png"
+                            alt="아이콘6"></a></li>
+                <li><a href="mailto:gayoung425@gmail.com" target="_blank"><img src="../img/footer02.png" alt="아이콘7"></a>
+                </li>
+                <li><a href="https://justgy.tistory.com/" target="_blank"><img src="../img/footer03.png" alt="아이콘8"></a>
+                </li>
+                <li><a href="https://www.behance.net/kathy5742fe59" target="_blank"><img src="../img/footer04.png"
+                            alt="아이콘9"></a></li>
             </ul>
         </div>
         <p>© 2019 Gysite. All Rights Reserved</p>
@@ -473,8 +483,8 @@
     <script src="../js/common.js"></script>
     <script>
         // loading
-        window.onload = function() {
-            document.all.loading.style.display='none'
+        window.onload = function () {
+            document.all.loading.style.display = 'none'
         }
 
         // modal event
@@ -499,7 +509,7 @@
 
         modalBack.addEventListener("click", modalRemove);
         closBtn.addEventListener("click", modalRemove);
-        
+
         var swiper = new Swiper('.swiper-container1', {
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -527,8 +537,8 @@
 
         var onClick = $("nav li a");
 
-        onClick.on("click", function() {
-            var content  = $(this).attr("href");
+        onClick.on("click", function () {
+            var content = $(this).attr("href");
             if (!$(this).hasClass("active")) {
                 onClick.removeClass("active");
                 $(this).addClass("active");
@@ -567,15 +577,15 @@
                 aboutCoLeft.classList.remove('active');
                 aboutColRight.classList.remove('active');
             }
-            for (let q=0; q<line.length; q++) {
-                let lineArray =  line[q];
-                if($(this).scrollTop() >= aboutSectionTop-marginT){
-                    if(!lineArray.classList.contains('active')) {
+            for (let q = 0; q < line.length; q++) {
+                let lineArray = line[q];
+                if ($(this).scrollTop() >= aboutSectionTop - marginT) {
+                    if (!lineArray.classList.contains('active')) {
                         lineArray.classList.add('active');
                     }
                 }
                 else lineArray.classList.remove('active');
-             }   
+            }
         });
 
         let portfolioSection = document.querySelector('.section3');
@@ -609,8 +619,8 @@
             }
             for (let w = 0; w < serviceUl.length; w++) {
                 let serviceUlArray = serviceUl[w];
-                if($(this).scrollTop() >= serviceSectionTop-marginT){
-                    if(!serviceUlArray.classList.contains('active')) {
+                if ($(this).scrollTop() >= serviceSectionTop - marginT) {
+                    if (!serviceUlArray.classList.contains('active')) {
                         serviceUlArray.classList.add('active');
                     }
                 }
@@ -634,8 +644,8 @@
             }
             for (let r = 0; r < contactList.length; r++) {
                 let contactListArray = contactList[r];
-                if($(this).scrollTop() >= contactSectionTop-marginT){
-                    if(!contactListArray.classList.contains('active')) {
+                if ($(this).scrollTop() >= contactSectionTop - marginT) {
+                    if (!contactListArray.classList.contains('active')) {
                         contactListArray.classList.add('active');
                     }
                 }
