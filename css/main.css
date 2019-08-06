@@ -650,16 +650,16 @@
     background-image: url('../img/project1.png')
 }
 .swiper-container2 .swiper-slide:nth-child(3) .img {
-    background-image: url('../img/project2.png')
+    background-image: url('../img/project4.png')
 }
 .swiper-container2 .swiper-slide:nth-child(4) .img {
     background-image: url('../img/project3.png')
 }
 .swiper-container2 .swiper-slide:nth-child(5) .img {
-    background-image: url('../img/project4.png')
+    background-image: url('../img/project5.png')
 }
 .swiper-container2 .swiper-slide:nth-child(6) .img {
-    background-image: url('../img/project5.png')
+    background-image: url('../img/project2.png')
 }
 .swiper-button-next, .swiper-button-prev {
     background-image: url('../img/arrow.png') !important ;

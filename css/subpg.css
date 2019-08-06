@@ -8,6 +8,10 @@ body {
     margin: 0;
     padding: 0;
 }
+table a:hover {
+    color: #16a085;
+    font-weight: 500;
+}
 .home-btn {
     display: block;
     position: fixed;
@@ -185,14 +189,15 @@ h2 {
 .col-2 ul {
     margin: 5% 0;
 }
-.col-2 ul li:first-child {
-    margin-bottom: 1.9%;
+.col-2 ul li:last-child {
+    margin-bottom: 0;
 }
 .col-2 ul li {
     width: 100%;
     font-weight: 500;
     font-size: 1rem;
     text-align: left;
+    margin-bottom: 1.9%;
 }
 .col-2 ul li span {
     float: left;
