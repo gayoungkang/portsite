@@ -186,6 +186,12 @@ h2 {
 .swiper-slide:nth-child(6) h2::after {
     content: "06";
 }
+.swiper-slide:nth-child(7) h2::after {
+    content: "07";
+}
+.swiper-slide:nth-child(8) h2::after {
+    content: "08";
+}
 .col-2 ul {
     margin: 5% 0;
 }
